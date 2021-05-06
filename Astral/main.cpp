@@ -5,12 +5,12 @@
 #include <stb_image_write.h>
 #include <vector>
 #include "utils.h"
+
 int main()
 {
 
-	int w = 300, h = 300, channels = 3;
-	int spp = 500;
-	//Ray cam(vec3(50, 52, 295.6), normalize(vec3(0, -0.042612, -1)));
+	int w = 1080, h = 1080, channels = 3;
+	int spp = 1000;
 	Ray cam(vec3(0, 0, 300), normalize(vec3(0, -0.042612, -1)));
 	double fov = 0.5135;
 	vec3 cx = vec3(w / h) * fov;
